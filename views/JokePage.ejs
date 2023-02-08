@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke-Generator</title>
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    
+    <h1>Joke Generator </h1>
+     <div class="container">
+    <div class="form">
+    <form action="/" method="post">
+        <div class="one">
+        <h3>Select categories</h3>
+        <input type="radio" value="Any" name="any" required>
+        <label for="">any</label>
+        </div>
+
+        <br>
+        <div class="two">
+        <input type="radio" value="Custom" name="any">
+        <label for="">Custom </label>
+        <input type="checkbox" value="Dark" class="onlyOne" id="dark" name="dark">
+        <label for="">dark</label>
+        <input type="checkbox" value="Programming" class="onlyOne" name="Programming" >
+        <label for="">Programming</label>
+        <input type="checkbox" value="Pun" class="onlyOne" name="pun">
+        <label for="">Pun</label>
+        <input type="checkbox" value="Miscellaneous" class="onlyOne" name="misc">
+        <label for="">misc</label>
+   
+
+    </div>
+        <div class="three" >
+        <h3>select type of jokes you don't want</h3>
+        <input type="checkbox" value="religious" name="religious">
+        <label for="">religious</label>
+        <input type="checkbox" value="political" name="political">
+        <label for="">political</label>
+        <input type="checkbox" value="racist" name="racist">
+        <label for="">racist</label>
+        <input type="checkbox" value="sexist" name="sexist">
+        <label for="">sexist</label>
+    </div>
+
+         <div class="four">
+         
+            <label for="">Amount Of Jokes </label>
+        <input type="text"  name="number"  id="num">
+        
+        
+    </div>
+            <br>
+            <div class="btn">
+        <button type="submit" class ="button">  See Results</button>
+    </div>    
+    <div class="joke">
+        <%= jokeLine %>
+    </div>              
+
+    </form>
+    </div>
+ </div>
+    <script src="public/js/index2.js"></script>
+
+    
+</body>
+</html>
